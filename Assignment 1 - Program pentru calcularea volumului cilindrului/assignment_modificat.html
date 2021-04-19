@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program pentru calcularea volumului cilindrului</title>
+    <title>Document</title>
 
     <script>
         const pi = 3.14;
         var r = prompt("Introdu raza bazei cilindrului:");
         var h = prompt("Introdu inaltimea cilindrului:");
-        var d = parseInt(r) * parseInt(r);
-
-        var volum = pi * d * parseInt(h);
-
+        r = parseFloat(r);
+        h = parseFloat(h)
+        
+        var volum = pi * r * r * h;
+        
         alert("Volumul cilindrului dumneavoastra este: " + volum);
-
-
-
     </script>
 </head>
 
 <body>
-
 
 </body>
 
