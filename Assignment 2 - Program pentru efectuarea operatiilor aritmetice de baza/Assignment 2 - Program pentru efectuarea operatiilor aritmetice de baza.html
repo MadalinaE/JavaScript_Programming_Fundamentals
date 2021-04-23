@@ -9,15 +9,27 @@
 
     <script>
         var x = prompt("Introdu primul numar al operatiei:");
-        var operator = prompt("Introdu unul din operatorii aritmetici:");
+        var operator = prompt('Introdu unul din operatorii aritmetici ("+" pentru adunare, "-" pentru scadere, "*" pentru inmultire sau "/" pentru impartire):');
         var y = prompt("Introdu al doilea numar al operatiei:");
 
         x = parseFloat(x)
         y = parseFloat(y)
 
-        var operatie = eval(x + operator + y);
-
-        alert("Rezultatul operatiei este: " + Math.round(operatie * 1000) / 1000);
+        if (operator === "+") {
+            alert("Rezultatul operatiei este: " + Math.round((x + y) * 1000) / 1000);
+        }
+        else if (operator === "-") {
+            alert("Rezultatul operatiei este: " + Math.round((x - y) * 1000) / 1000);
+        }
+        else if (operator === "*") {
+            alert("Rezultatul operatiei este: " + Math.round((x * y) * 1000) / 1000);
+        }
+        else if (operator === "/") {
+            alert("Rezultatul operatiei este: " + Math.round((x / y) * 1000) / 1000);
+        }
+        else {
+            alert("Rezultatul operatiei nu poate fi calculat intrucat nu ati folosit un operator aritmetic valid.");
+        }
 
     </script>
 </head>
